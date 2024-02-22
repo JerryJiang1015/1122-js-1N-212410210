@@ -1,0 +1,38 @@
+git config --global user.email “212410210@o365.tku.edu.tw”
+git config --global user.name “JerryJiang1015”
+
+git commit -m "
+
+git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2024-01-03"
+
+sass --watch scss:css
+sass --watch /1121-1N-final_2/final/scss:demo/1121-1N-final_2/final/css
+sass --watch demo/w16_portfolio_10/scss:demo/w16_portfolio_10/css
+sass --watch project/scss:project/css
+
+/d/1N/1121-sweb-demo-212410210/demo/w11_mid-2_10/mid-2_10/cards_10
+/d/1Nw11_mid-2_10/mid-2_10/cards_10
+
+小素材 icon
+https://fontawesome.com/
+版面 
+https://cdnjs.com/libraries/font-awesome
+
+https://www.w3schools.com/
+
+### W0-P1:
+
+![](W0-p1.png)
+
+### W0-P2:
+
+![](W0-p2.png)
+
+### W0-P3:
+
+![](W0-p3.png)
+
+### W0-O4:
+
+![](W0-p4.png)
+
