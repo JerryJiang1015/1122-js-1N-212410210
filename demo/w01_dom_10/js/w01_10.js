@@ -55,10 +55,13 @@ function divide() {
   const operand1 = currentResult;
   const operand2 = getUserInput();
   // console.log(operand1, operand2, operand1 / operand2);
-  currentResult = operand1 / operand2;
-  const calText = `${operand1} / ${operand2}`;
-  console.log(`${operand1} / ${operand2} = ${currentResult}`);
-  outputResult(currentResult, calText);
+  if (operand2 === 0) alert(`cannot divide by 0`);
+  else {
+    currentResult = operand1 / operand2;
+    const calText = `${operand1} / ${operand2}`;
+    console.log(`${operand1} / ${operand2} = ${currentResult}`);
+    outputResult(currentResult, calText);
+  }
 }
 
 addBtn.addEventListener('click', add);
