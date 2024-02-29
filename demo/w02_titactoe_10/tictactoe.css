@@ -53,6 +53,7 @@ footer {
     width:70%;
 }
 
+#board li:hover,
 #reset:hover {
     cursor: pointer;
     background-color: #000;
