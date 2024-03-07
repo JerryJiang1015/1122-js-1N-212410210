@@ -13,7 +13,7 @@ const defaultResult = 0;
 let currentResult = defaultResult;
 
 function getUserInput() {
-  return parseInt(userInput.value);
+  return parseFloat(userInput.value);
 }
 
 function outputResult(result, text) {
