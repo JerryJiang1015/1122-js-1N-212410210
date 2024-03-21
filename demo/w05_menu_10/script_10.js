@@ -39,7 +39,7 @@ categories.forEach((category) => {
   const button = document.createElement('button');
   button.type = 'button';
   button.classList.add('filter-btn');
-  button.dataset.id = category; // Add data-id attribute for later filtering
+  button.dataset.id = category;
   button.textContent = category;
 
   btnContainer.appendChild(button);
