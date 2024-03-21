@@ -26,5 +26,8 @@ function showdemo(week) {
     case 'w4-p6':
       p.innerHTML = `<iframe src="./demo/w04_basics_10/p6_10/p6_10.html" width="100%" height="100%" />`;
       break;
+    case 'w5':
+      p.innerHTML = `<iframe src="./demo/w05_menu_10/index_10.html" width="100%" height="100%" />`;
+      break;
   }
 }
