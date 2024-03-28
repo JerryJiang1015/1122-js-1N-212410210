@@ -18,7 +18,7 @@ const menu = [
   {
     id: 3,
     title: 'godzilla milkshake',
-    category: 'lunch',
+    category: 'dinner',
     price: 6.99,
     img: './images/item-3.jpeg',
     desc: 'ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.',
@@ -26,7 +26,7 @@ const menu = [
   {
     id: 4,
     title: 'country delight',
-    category: 'lunch',
+    category: 'breakfast',
     price: 20.99,
     img: './images/item-4.jpeg',
     desc: 'Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut.',

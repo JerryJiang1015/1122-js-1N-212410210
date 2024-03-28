@@ -28,12 +28,21 @@ const displayMenuItems = (menu) => {
       `;
     })
     .join('');
-  console.log('displayMenu', displayMenuItems);
+  // console.log('displayMenu', displayMenuItems);
   sectionCenter.innerHTML = displayMenuItems;
 };
 
 const btnContainer = document.querySelector('.btn-container');
-const categories = ['all', 'breakfast', 'lunch', 'dinner', 'shakes'];
+// const categories = ['all', 'breakfast', 'lunch', 'dinner', 'shakes'];
+const menuCategories = new Set(
+  menu.map((item) => {
+    return item.category;
+  })
+);
+console.log('menuCategories', menuCategories);
+
+const categories = ['all', ...menuCategories];
+console.log('categories', categories);
 
 categories.forEach((category) => {
   const button = document.createElement('button');
@@ -47,4 +56,5 @@ categories.forEach((category) => {
 
 window.addEventListener('DOMContentLoaded', () => {
   displayMenuItems(menu);
+  displayMenuButtons();
 });
