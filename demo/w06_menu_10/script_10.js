@@ -54,7 +54,7 @@ console.log('categories', categories);
 //   btnContainer.appendChild(button);
 // });
 
-const displayMenuButtons = () => {
+const displayMenuButtons = (menuItems) => {
   let menuButtons = categories
     .map((category) => {
       return `
@@ -65,6 +65,21 @@ const displayMenuButtons = () => {
     .join('');
   console.log('menuButtons', menuButtons);
   btnContainer.innerHTML = menuButtons;
+
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  console.log('filterBtns', filterBtns);
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      console.log('data-id', e.currentTarget.dataset.id);
+      const category = e.currentTarget.dataset.id;
+      const filterMenu = menu.filter((item) => item.category === category);
+      if (category === 'all') {
+        displayMenuItems(menu);
+      } else {
+        displayMenuItems(filterMenu);
+      }
+    });
+  });
 };
 
 window.addEventListener('DOMContentLoaded', () => {

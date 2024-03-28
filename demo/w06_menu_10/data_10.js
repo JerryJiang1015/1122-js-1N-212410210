@@ -18,7 +18,7 @@ const menu = [
   {
     id: 3,
     title: 'godzilla milkshake',
-    category: 'dinner',
+    category: 'shake',
     price: 6.99,
     img: './images/item-3.jpeg',
     desc: 'ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.',
@@ -34,10 +34,18 @@ const menu = [
   {
     id: 5,
     title: 'Oreo Dream',
-    category: 'shakes',
+    category: 'shake',
     price: 18.99,
     img: './images/item-6.jpeg',
     desc: 'Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday',
+  },
+  {
+    id: 6,
+    title: 'Egg Attack',
+    category: 'dinner',
+    price: 22.99,
+    img: './images/item-5.jpeg',
+    desc: "franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up",
   },
 ];
 
