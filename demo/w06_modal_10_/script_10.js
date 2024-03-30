@@ -10,11 +10,15 @@ const openModal = (modalId) => {
   overlay.classList.remove('hidden');
 };
 
-const closeModal = (modalId) => {
-  const pModal = document.querySelector(`.${modalId}`);
-  pModal.classList.add('hidden');
+const closeModals = () => {
+  modals.forEach((modal) => {
+    modal.classList.add('hidden');
+  });
+  console.log('modals', modals);
   overlay.classList.add('hidden');
 };
+
+
 
 const closeAllModals = () => {
   modals.forEach((modal) => {
@@ -33,7 +37,7 @@ btnsOpenModal.forEach((btn) => {
 
 btnCloseModals.forEach((btn) => {
   btn.addEventListener('click', (e) => {
-    closeModal(e.currentTarget.closest('.modal').dataset.id);
+    closeModals(e.currentTarget.closest('.modal').dataset.id);
   });
 });
 
