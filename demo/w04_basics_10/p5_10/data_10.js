@@ -1,5 +1,12 @@
 export const tours_10 = [
   {
+    id: 6,
+    name: 'Best Of Taiwan In16 Days Tour',
+    info: 'Taiwan',
+    local_img: './img/vas-qhu2nFWqVEU-unsplash.jpg',
+    price: 2595,
+  },
+  {
     id: 1,
     name: 'Best Of Paris In 7 Days Tour',
     info: 'Paris is synonymous with the finest things that culture can offer — in art, fashion, food, literature, and ideas. On this tour, your Paris-savvy Rick Steves guide will immerse you in the very best of ...',

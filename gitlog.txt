@@ -1,0 +1,71 @@
+$ git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2024-02-19"
+6e75058 JerryJiang1015  Sat Mar 30 10:28:57 2024 +0000  upload
+61d29d0 JerryJiang1015  Sat Mar 30 10:25:58 2024 +0000  W06-P6: git logs for W06
+b9865fe JerryJiang1015  Sat Mar 30 10:14:43 2024 +0000  W06-P5: implement close modals
+1ebba30 JerryJiang1015  Sat Mar 30 09:46:35 2024 +0800  Update index.html
+fc9adbf “JerryJiang1015”        Thu Mar 28 22:04:17 2024 +0800  upload
+7e5698f “JerryJiang1015”        Thu Mar 28 22:03:03 2024 +0800  W06-P4: implement open modals
+317a47a “JerryJiang1015”        Thu Mar 28 20:55:53 2024 +0800  W06-P3: implement filter buttons
+9a9046a “JerryJiang1015”        Thu Mar 28 20:25:06 2024 +0800  W06-P2: Display Menu buttons from categories array
+c0f6db3 “JerryJiang1015”        Thu Mar 28 19:58:28 2024 +0800  W06-P1: Create categories dynamically from data_10.js
+b7789c8 “JerryJiang1015”        Thu Mar 21 21:12:30 2024 +0800  upload
+2ad6e4b “JerryJiang1015”        Thu Mar 21 21:11:12 2024 +0800  W05-P5: git logs for W04
+d87a8d2 “JerryJiang1015”        Thu Mar 21 21:08:54 2024 +0800  W05-P4: Display Menu buttons from categories array (do it by yourself)
+a1f9768 “JerryJiang1015”        Thu Mar 21 20:47:48 2024 +0800  W05-P3: Display Menu Items from menu json array on both local and Vercel
+668fd03 “JerryJiang1015”        Thu Mar 21 20:40:47 2024 +0800  upload
+4b2e9a6 “JerryJiang1015”        Thu Mar 21 19:38:47 2024 +0800  W05-P2: Show W05-P1 in Vercel, add github and globe icons for Github and Vercel
+1536162 “JerryJiang1015”        Thu Mar 21 19:34:00 2024 +0800  upload
+351d657 “JerryJiang1015”        Thu Mar 21 19:24:34 2024 +0800  upload
+468314d “JerryJiang1015”        Thu Mar 21 19:08:37 2024 +0800  W05-P1: Use megamenu to show class demo w1~W4 locally
+7a18b88 “JerryJiang1015”        Thu Mar 14 21:25:37 2024 +0800  W04-P5: git logs for W04
+1113801 “JerryJiang1015”        Thu Mar 14 21:23:36 2024 +0800  W04-P4: P6_10 -- BMI Compute with Suggestion
+ce19115 “JerryJiang1015”        Thu Mar 14 20:25:03 2024 +0800  W04-P3: P5_10 -- Display 5 tours from data_xx.js (json array)
+c05bce2 “JerryJiang1015”        Thu Mar 14 20:17:37 2024 +0800  W04-P2: P5_10 -- Tours display two fixed data
+a564ec3 “JerryJiang1015”        Thu Mar 14 19:05:56 2024 +0800  W04-P1: P4_10 -- Counter Demo
+b197335 “JerryJiang1015”        Thu Mar 7 21:01:11 2024 +0800   W03-P5: git logs for W03
+0225f69 “JerryJiang1015”        Thu Mar 7 20:54:45 2024 +0800   ## W03-P4: Compute highest and lowest score of sdata and students2
+fdc12ca “JerryJiang1015”        Thu Mar 7 20:41:33 2024 +0800   W03-P2: P2_xx temperature convert using Web
+b874d92 “JerryJiang1015”        Thu Mar 7 20:20:09 2024 +0800   ## W03-P3: import sdata and students data from data_10.js
+6d011fc “JerryJiang1015”        Thu Mar 7 19:12:01 2024 +0800   W03-P1: P1_10 temperature convert
+7e2925b “JerryJiang1015”        Thu Feb 29 21:11:40 2024 +0800  W02-P4: git logs for W02
+b4ba7b8 “JerryJiang1015”        Thu Feb 29 21:03:36 2024 +0800  W02-P4: git logs for W02
+6e75058 JerryJiang1015  Sat Mar 30 10:28:57 2024 +0000  upload
+61d29d0 JerryJiang1015  Sat Mar 30 10:25:58 2024 +0000  W06-P6: git logs for W06
+b9865fe JerryJiang1015  Sat Mar 30 10:14:43 2024 +0000  W06-P5: implement close modals
+1ebba30 JerryJiang1015  Sat Mar 30 09:46:35 2024 +0800  Update index.html
+fc9adbf “JerryJiang1015”        Thu Mar 28 22:04:17 2024 +0800  upload
+7e5698f “JerryJiang1015”        Thu Mar 28 22:03:03 2024 +0800  W06-P4: implement open modals
+317a47a “JerryJiang1015”        Thu Mar 28 20:55:53 2024 +0800  W06-P3: implement filter buttons
+9a9046a “JerryJiang1015”        Thu Mar 28 20:25:06 2024 +0800  W06-P2: Display Menu buttons from categories array
+c0f6db3 “JerryJiang1015”        Thu Mar 28 19:58:28 2024 +0800  W06-P1: Create categories dynamically from data_10.js
+b7789c8 “JerryJiang1015”        Thu Mar 21 21:12:30 2024 +0800  upload
+2ad6e4b “JerryJiang1015”        Thu Mar 21 21:11:12 2024 +0800  W05-P5: git logs for W04
+d87a8d2 “JerryJiang1015”        Thu Mar 21 21:08:54 2024 +0800  W05-P4: Display Menu buttons from categories array (do it by yourself)
+a1f9768 “JerryJiang1015”        Thu Mar 21 20:47:48 2024 +0800  W05-P3: Display Menu Items from menu json array on both local and Vercel
+668fd03 “JerryJiang1015”        Thu Mar 21 20:40:47 2024 +0800  upload
+4b2e9a6 “JerryJiang1015”        Thu Mar 21 19:38:47 2024 +0800  W05-P2: Show W05-P1 in Vercel, add github and globe icons for Github and Vercel
+1536162 “JerryJiang1015”        Thu Mar 21 19:34:00 2024 +0800  upload
+351d657 “JerryJiang1015”        Thu Mar 21 19:24:34 2024 +0800  upload
+468314d “JerryJiang1015”        Thu Mar 21 19:08:37 2024 +0800  W05-P1: Use megamenu to show class demo w1~W4 locally
+7a18b88 “JerryJiang1015”        Thu Mar 14 21:25:37 2024 +0800  W04-P5: git logs for W04
+1113801 “JerryJiang1015”        Thu Mar 14 21:23:36 2024 +0800  W04-P4: P6_10 -- BMI Compute with Suggestion
+ce19115 “JerryJiang1015”        Thu Mar 14 20:25:03 2024 +0800  W04-P3: P5_10 -- Display 5 tours from data_xx.js (json array)
+c05bce2 “JerryJiang1015”        Thu Mar 14 20:17:37 2024 +0800  W04-P2: P5_10 -- Tours display two fixed data
+a564ec3 “JerryJiang1015”        Thu Mar 14 19:05:56 2024 +0800  W04-P1: P4_10 -- Counter Demo
+b197335 “JerryJiang1015”        Thu Mar 7 21:01:11 2024 +0800   W03-P5: git logs for W03
+0225f69 “JerryJiang1015”        Thu Mar 7 20:54:45 2024 +0800   ## W03-P4: Compute highest and lowest score of sdata and students2
+fdc12ca “JerryJiang1015”        Thu Mar 7 20:41:33 2024 +0800   W03-P2: P2_xx temperature convert using Web
+b874d92 “JerryJiang1015”        Thu Mar 7 20:20:09 2024 +0800   ## W03-P3: import sdata and students data from data_10.js
+6d011fc “JerryJiang1015”        Thu Mar 7 19:12:01 2024 +0800   W03-P1: P1_10 temperature convert
+7e2925b “JerryJiang1015”        Thu Feb 29 21:11:40 2024 +0800  W02-P4: git logs for W02
+b4ba7b8 “JerryJiang1015”        Thu Feb 29 21:03:36 2024 +0800  W02-P4: git logs for W02
+365caa5 “JerryJiang1015”        Thu Feb 29 21:03:10 2024 +0800  W02-P4: git logs for W02
+9f124d7 “JerryJiang1015”        Thu Feb 29 20:59:58 2024 +0800  W02-P3: implment checkWin(player), and winMessage(player)
+aa46ff1 “JerryJiang1015”        Thu Feb 29 19:57:05 2024 +0800  W02-P2: implement reset button
+0397ade “JerryJiang1015”        Thu Feb 29 19:03:48 2024 +0800  W02-P1: Show Tictactoe css
+f5b3426 “JerryJiang1015”        Thu Feb 22 21:27:28 2024 +0800  W01-P6: git logs for W01
+cfb1118 “JerryJiang1015”        Thu Feb 22 21:24:54 2024 +0800  W01-P5: implement divide function
+9fc0bdc “JerryJiang1015”        Thu Feb 22 21:23:40 2024 +0800  W01-P4: implement multiply function
+e5de44b “JerryJiang1015”        Thu Feb 22 21:21:55 2024 +0800  W01-P2: implement add function
+46070ae “JerryJiang1015”        Thu Feb 22 21:14:20 2024 +0800  W01-P3: implement subtract function
+fd05f6f “JerryJiang1015”        Thu Feb 22 19:35:27 2024 +0800  W01-P1 : Show the wo1-dom title
