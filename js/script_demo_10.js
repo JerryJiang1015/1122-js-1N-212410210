@@ -29,5 +29,14 @@ function showdemo(week) {
     case 'w5':
       p.innerHTML = `<iframe src="./demo/w05_menu_10/index_10.html" width="100%" height="100%" />`;
       break;
+    case 'mid21_10-1':
+      p.innerHTML = `<iframe src="./1122-1N-mid21/mid21_10/p1_10/p1_10.html" width="100%" height="100%" />`;
+      break;
+    case 'mid21_10-2':
+      p.innerHTML = `<iframe src="./1122-1N-mid21/mid21_10/p2_10/p2_10.html" width="100%" height="100%" />`;
+      break;
+    case 'mid21_10-3':
+      p.innerHTML = `<iframe src="./1122-1N-mid21/mid21_10/p3_10/p3_10.html#" width="100%" height="100%" />`;
+      break;
   }
 }
