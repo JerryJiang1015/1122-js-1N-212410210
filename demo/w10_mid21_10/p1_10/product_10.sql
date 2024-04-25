@@ -18,6 +18,9 @@ VALUES
 (7,'Albany Sectional', 10.99,'Ikea','./images/product-6.jpg',''),
 (8,'Sofa Set', 69.99,'Liddy','./images/product-8.jpg','')
 
+INSERT INTO product_10 (id, title, price, category, img, remote_img)
+VALUES
+(13,'Wooden Table', 19.99,'Ikea','./images/product-13.jpg','https://unsplash.com/s/photos/table')
 
 INSERT INTO product_10 (id, title, price, category, img, remote_img)
 VALUES
@@ -32,4 +35,5 @@ VALUES
 (9,'Utopia Sofa', 69.99,'Liddy','./images/product-9.jpg',''),
 (10,'Modern Bookshelf', 8.99,'Marcos','./images/product-10.jpg',''),
 (11,'Albany Table', 79.99,'Marcos','./images/product-11.jpg',''),
-(12,'Leather Sofa', 39.99,'Liddy','./images/product-12.jpg','')
+(12,'Leather Sofa', 39.99,'Liddy','./images/product-12.jpg',''),
+(13,'Wooden Table', 19.99,'Ikea','./images/product-13.jpg','')
