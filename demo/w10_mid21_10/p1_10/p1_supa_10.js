@@ -32,7 +32,7 @@ const DisplayProducts = (products) => {
           <h3 class="name">${title} (${id})</h3>
           <span class="price">$${price}</span>
         </footer>
-      </div> -->
+      </div>
     `;
     })
     .join('');
