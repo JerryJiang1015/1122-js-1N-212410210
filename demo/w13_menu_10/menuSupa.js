@@ -9,8 +9,8 @@ const btnContainer = document.querySelector('.btn-container');
 
 const fetchData = async () => { 
   try {
-    const response = await fetch(url);
-    const data = response.json();
+
+let {data, error} = await supabase.from('menu_10').select('*');
     console.log('fetch menu', data);
     return data ;
   } catch (error){
@@ -22,11 +22,11 @@ console.log('menu', menu);
 const displayMenuItems = (menu) => {
   let displayMenuItems = menu
     .map((item) => {
-      const { id, title, category, price, local_img, descript } = item;
+      const { id, title, category, price, remote_img, descript } = item;
       return `
         <article class="menu-item">
           <img
-            src=${local_img}
+            src=${remote_img}
             alt="${title}"
             class="photo"
           />
