@@ -1,6 +1,6 @@
 // import menu from './data_10.js';
 
-const url = './api/data_10.json';
+import {_supabase } from './clientSupabase_10';
 let menu = [];
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
