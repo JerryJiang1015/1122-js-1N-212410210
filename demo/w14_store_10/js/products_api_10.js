@@ -1,11 +1,11 @@
 // import { products_10, all_products_10 } from './p1_data_10.js';
-
+ 
 import { _supabase } from './clientSupabase_10.js';
-
+ 
 const url = 'https://www.course-api.com/javascript-store-products'
-
+ 
 let products_10 = [];
-
+ 
 const fetchData = async (url) => {
   try {
     const reponse = await fetch(url);
@@ -16,11 +16,11 @@ const fetchData = async (url) => {
     console.log('error', error);
   }
 }
-
+ 
 const productContainer = document.querySelector('.products-container');
-
+ 
 console.log('products_10', products_10);
-
+ 
 const displayProducts = (products) => {
   let productsContent = products.map((product) => {
     const { name,  price, image } = product.fields;
@@ -40,7 +40,7 @@ const displayProducts = (products) => {
   }).join('');
   productContainer.innerHTML = productsContent;
  };
-
+ 
 document.addEventListener('DOMContentLoaded', async () => {
   products_10 = await fetchData(url);
   displayProducts(products_10);
