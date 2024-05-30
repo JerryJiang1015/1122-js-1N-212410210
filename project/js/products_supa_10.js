@@ -22,11 +22,11 @@ console.log('products_10', products_10);
 const displayProducts = (products) => {
   let productsContent = products
     .map((product) => {
-      const { title, price, localImg } = product;
+      const { title, price, remoteImg } = product;
       return `
         <div class="single-product">
         <img
-          src=${localImg}
+          src=${remoteImg}
           class="single-product-img img"
           alt=${title}
         />
