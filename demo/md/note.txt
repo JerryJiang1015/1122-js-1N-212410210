@@ -9,6 +9,7 @@ sass --watch scss:css
 sass --watch /1121-1N-final_2/final/scss:demo/1121-1N-final_2/final/css
 sass --watch demo/w16_portfolio_10/scss:demo/w16_portfolio_10/css
 sass --watch project/scss:project/css
+sass --watch demo/w15_products_10/scss:demo/w15_products_10/css
 
 /d/1N/1121-sweb-demo-212410210/demo/w11_mid-2_10/mid-2_10/cards_10
 /d/1Nw11_mid-2_10/mid-2_10/cards_10

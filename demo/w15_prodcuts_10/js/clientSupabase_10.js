@@ -1,0 +1,5 @@
+const SUPABESE_URL = 'https://mcwwroqeninwtvahbgcv.supabase.co';
+const SUPABESE_ANON_KEY =
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jd3dyb3Flbmlud3R2YWhiZ2N2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTQwNDExMzUsImV4cCI6MjAyOTYxNzEzNX0.gQn5qwAm6Nlncr2YzhKFYysmQSj34Rzoa47rko2P538';
+
+export const _supabase = supabase.createClient(SUPABESE_URL, SUPABESE_ANON_KEY);

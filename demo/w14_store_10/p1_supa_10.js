@@ -6,7 +6,7 @@ let products_10 = [];
 
 const getProductsSupabase_10 = async () => {
   try {
-    let { data, error } = await _supabase.from('product_10').select('*');
+    let { data, error } = await _supabase.from('project_10').select('*');
     console.log('product data', data);
     return data;
   } catch (error) {
