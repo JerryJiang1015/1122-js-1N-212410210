@@ -3,7 +3,7 @@ function showdemo(week) {
   console.log('p', p);
   switch (week) {
     case 'projects':
-      p.innerHTML = `<iframe src="./demo/project/products_supa_10.html" width="100%" height="100%" />`;
+      p.innerHTML = `<iframe src="./project/products_supa_10.html" width="100%" height="100%" />`;
       break;
     case 'w1':
       p.innerHTML = `<iframe src="./demo/w01_dom_10/index.html" width="100%" height="100%" />`;
