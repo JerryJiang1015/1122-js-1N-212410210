@@ -1,53 +1,52 @@
 import { _supabase } from './clientSupabase_10.js';
 
-let products_10 = [];
+let project_10 = [];
 
-const getProductsSupabase_10 = async () => {
+const getprojectsSupabase_10 = async () => {
   try {
-    let { data, error } = await _supabase.from('product_10').select('*');
-    console.log('product data', data);
+    let { data, error } = await _supabase.from('project_10').select('*');
+    if (error) throw error;
+    console.log('project data', data);
     return data;
   } catch (error) {
-    console.log(error);
+    console.error('Error fetching projects:', error);
+    return [];
   }
 };
 
 const tilesCenter = document.querySelector('.tiles-center');
- 
-console.log('products_10', products_10);
- 
-const displayProducts = (products) => {
-  let tilescenters = products.map((product) => {
-    const { name,  id, img } = product.fields;
+
+const displayprojects = (projects) => {
+  let tilescenters = projects.map((project) => {
+    const {name, id, img } = project;
     return `
     <section class="tile-${id}">
-    <div class="homeimg-container">
+      <div class="homeimg-container">
         <img src="${img}" alt="${id}" class="homeimg">
         <a class="img-text">${name}</a>
-    </div>
-</section>
+      </div>
+    </section>
     `;
   }).join('');
   tilesCenter.innerHTML = tilescenters;
- };
- 
-document.addEventListener('DOMContentLoaded', async () => {
-    products_10 = await getProductsSupabase_10();
-  displayProducts(products_10);
-});
 
-const images = document.querySelectorAll('.homeimg-container');
-
-images.forEach(imageContainer => {
+  // 在這裡設置圖片的事件監聽器
+  const images = document.querySelectorAll('.homeimg-container');
+  images.forEach(imageContainer => {
     const imgText = imageContainer.querySelector('.img-text');
 
     imageContainer.addEventListener('mouseenter', () => {
-        imgText.classList.add('visible');
+      imgText.classList.add('visible');
     });
 
     imageContainer.addEventListener('mouseleave', () => {
-        imgText.classList.remove('visible');
+      imgText.classList.remove('visible');
     });
+  });
+};
+
+document.addEventListener('DOMContentLoaded', async () => {
+  project_10 = await getprojectsSupabase_10();
+  console.log('Loaded project_10', project_10);
+  displayprojects(project_10);
 });
-
-

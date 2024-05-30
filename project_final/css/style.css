@@ -99,7 +99,7 @@ img & word
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
-  font-size: 6vw;
+  font-size: 5vw;
   background-color: rgba(0, 0, 0, 0.4);
   width: 95%;
   height: 95%;
@@ -113,6 +113,9 @@ img & word
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   border: 0.8vw solid rgb(87, 3, 155);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
 
 

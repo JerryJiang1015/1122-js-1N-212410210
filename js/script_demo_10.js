@@ -32,6 +32,9 @@ function showdemo(week) {
     case 'w5':
       p.innerHTML = `<iframe src="./demo/w05_menu_10/index_10.html" width="100%" height="100%" />`;
       break;
+      case 'w6':
+        p.innerHTML = `<iframe src="./demo/w06_menu_10/index_10.html" width="100%" height="100%" />`;
+        break;
     case 'mid21_10-1':
       p.innerHTML = `<iframe src="./1122-1N-mid21/mid21_10/p1_10/p1_10.html" width="100%" height="100%" />`;
       break;
@@ -58,6 +61,42 @@ function showdemo(week) {
       break;
       case 'w11-6':
       p.innerHTML = `<iframe src="./demo/w11-async_js_10/6-promise-astnc-await/index.html" width="100%" height="100%" />`;
+      break;
+      case 'w12-1':
+      p.innerHTML = `<iframe src="./demo/w12_ajax_10/1_sample-txt/index.html" width="100%" height="100%" />`;
+      break;
+      case 'w12-2':
+        p.innerHTML = `<iframe src="./demo/w12_ajax_10/2_sample-txt/index.html" width="100%" height="100%" />`;
+        break;
+        case 'w12-3':
+          p.innerHTML = `<iframe src="./demo/w12_ajax_10/3_json-people/index.html" width="100%" height="100%" />`;
+      break;
+      case 'w12-4':
+        p.innerHTML = `<iframe src="./demo/w12_ajax_10/4_json-people_fetch_api/index.html" width="100%" height="100%" />`;
+      break;
+      case 'w12-5':
+        p.innerHTML = `<iframe src="./demo/w12_ajax_10/5_json-people_async_await/index.html" width="100%" height="100%" />`;
+      break;
+      case 'w13-1':
+        p.innerHTML = `<iframe src="./demo/w13_menu_10/menuLocalJson_10.html" width="100%" height="100%" />`;
+      break;
+      case 'w13-2':
+        p.innerHTML = `<iframe src="./demo/w13_menu_10/menuSupa.html" width="100%" height="100%" />`;
+      break;
+      case 'w14-1':
+        p.innerHTML = `<iframe src="./demo/w14_store_10/p1_supa_10.html" width="100%" height="100%" />`;
+      break;
+      case 'w14-2':
+        p.innerHTML = `<iframe src="./demo/w14_store_10/products_api_10.html" width="100%" height="100%" />`;
+      break;
+      case 'w14-3':
+        p.innerHTML = `<iframe src="./demo/w14_store_10/products_localJson_10.html" width="100%" height="100%" />`;
+      break;
+      case 'w14-4':
+        p.innerHTML = `<iframe src="./demo/w14_store_10/products_supa_10.html" width="100%" height="100%" />`;
+      break;
+      case 'w15-1':
+        p.innerHTML = `<iframe src="./demo/w15_prodcuts_10/products_supa_10.html" width="100%" height="100%" />`;
       break;
   }
 }
