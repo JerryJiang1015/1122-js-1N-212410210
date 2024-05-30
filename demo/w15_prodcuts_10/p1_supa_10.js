@@ -15,6 +15,7 @@ const getProductsSupabase_10 = async () => {
 };
 
 const productContainer = document.querySelector('.products-container');
+const companyBtns = document.querySelector('.company-btn');
 
 console.log('products_10', products_10);
 
@@ -39,6 +40,13 @@ const displayProducts = (products) => {
     .join('');
   productContainer.innerHTML = productsContent;
 };
+
+companyBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    const companyName = e.currentTarget.dataset.id;
+    console.log('companyName',companyName);
+  })
+});
 
 document.addEventListener('DOMContentLoaded', async () => {
   products_10 = await getProductsSupabase_10();
