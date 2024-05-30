@@ -22,16 +22,16 @@ console.log('products_10', products_10);
 const displayProducts = (products) => {
   let productsContent = products
     .map((product) => {
-      const { id, title, price, category, img, remote_url } = product;
+      const {title, price,localImg} = product;
       return `
         <div class="single-product">
         <img
-          src=${img}
+          src=${localImg}
           class="single-product-img img"
           alt=${title}
         />
         <footer>
-          <h3 class="name">${title} (${id})</h3>
+          <h3 class="name">${title}</h3>
           <span class="price">$${price}</span>
         </footer>
       </div>
@@ -42,9 +42,25 @@ const displayProducts = (products) => {
 };
 
 companyBtns.forEach((btn) => {
-  btn.addEventListener('click', (e) => {
+  btn.addEventListener('click', async (e) => {
     const companyName = e.currentTarget.dataset.id;
     console.log('companyName',companyName);
+    if (companyName === 'all') {
+      products_10 = await getProductsSupabase_10();
+    } else {
+      let { data: company, error1 } = await _supabase
+      .from('company_10')
+      .select('id')
+      .eq('name', companyName);
+      console.log('company id',company[0].id);
+      let { data, error } = await _supabase
+      .from('products_10')
+      .select('*')
+      .eq('companyID', companyName);
+      console.log(`${companyName} products`, data2);
+      products_10 = data2;
+    }
+    displayProducts(products_10);
   })
 });
 
