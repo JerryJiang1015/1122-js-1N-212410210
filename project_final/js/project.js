@@ -18,19 +18,18 @@ const tilesCenter = document.querySelector('.tiles-center');
 
 const displayprojects = (projects) => {
   let tilescenters = projects.map((project) => {
-    const {name, id, img } = project;
+    const {name, id, img ,link} = project;
     return `
     <section class="tile-${id}">
       <div class="homeimg-container">
         <img src="${img}" alt="${id}" class="homeimg">
-        <a class="img-text">${name}</a>
+        <a class="img-text" href="${link}">${name}</a>
       </div>
     </section>
     `;
   }).join('');
   tilesCenter.innerHTML = tilescenters;
-
-  // 在這裡設置圖片的事件監聽器
+s
   const images = document.querySelectorAll('.homeimg-container');
   images.forEach(imageContainer => {
     const imgText = imageContainer.querySelector('.img-text');
@@ -50,3 +49,5 @@ document.addEventListener('DOMContentLoaded', async () => {
   console.log('Loaded project_10', project_10);
   displayprojects(project_10);
 });
+
+
