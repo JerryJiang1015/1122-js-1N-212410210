@@ -28,7 +28,7 @@ const getAlbumSupabase = async () => {
 };
 
 const tilesCenter = document.querySelector('.tiles-center');
-const videoSection = document.querySelector('.video');
+const videoContainer = document.querySelector('#video-container');
 const Btn = document.querySelectorAll('.btn');
 
 Btn.forEach((btn) => {
@@ -53,19 +53,12 @@ Btn.forEach((btn) => {
   });
 });
 
-const displayVideo = (projects) => {
-  let video = projects.map((project) => {
-    const { id,video } = project;
-    return `
-      <div class="video-${id} video">
-      ${video}
-      </div>
-    `;
-  }).join('');
-  videoSection.innerHTML = video
-};
-
 const displayNextVideo = () => {
+  if (project_10.length === 0) return;
+
+  currentVideoIndex = (currentVideoIndex + 1) % project_10.length;
+  const nextVideo = project_10[currentVideoIndex].video;
+  videoContainer.innerHTML = nextVideo;
 };
 
 const displayprojects = (projects) => {
@@ -97,6 +90,5 @@ const displayprojects = (projects) => {
 document.addEventListener('DOMContentLoaded', async () => {
   project_10 = await getprojectsSupabase_10();
   console.log('Loaded project_10', project_10);
-  displayVideo(project_10);
   displayprojects(project_10);
 });
