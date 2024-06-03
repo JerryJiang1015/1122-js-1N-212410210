@@ -65,7 +65,8 @@ const displayprojects = (projects) => {
       <section class="tile-${id}">
         <div class="homeimg-container">
           <img src="${img}" alt="${id}" class="homeimg">
-          <a class="img-text" href="${link}">${name}</a>
+          <a class="img-text" href="${link}">
+          <h3>${name}</h3></a>
         </div>
       </section>
     `;

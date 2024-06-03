@@ -43,7 +43,9 @@ section h2::before {
   display: block;
 }
 section h3 {
-  font-size: 3vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
   margin-bottom: 1.2vw;
   margin-top: 0.1vw;
   width: 100%;
@@ -122,18 +124,15 @@ img & word
   justify-content: center;
   align-items: center;
   position: absolute;
-  color: #ffffff;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
-  font-size: 5vw;
   background-color: rgba(0, 0, 0, 0.4);
   width: 95%;
   height: 95%;
   border: 0.5vw solid rgba(87, 3, 155, 0.8);
   text-transform: capitalize;
-  font-family: "mrs-eaves", "Baskerville Old Face", Garamond, "Times New Roman", serif;
   transition: transform 0.2s , opacity 0.1s ;
 }
 
