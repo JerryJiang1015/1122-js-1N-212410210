@@ -43,12 +43,13 @@ section h2::before {
   display: block;
 }
 section h3 {
-  font-size: 4em;
-  margin: 1em auto;
-  margin-top: 0.1rem;
-  width: 70%;
-  text-transform: uppercase;
+  font-size: 3vw;
+  margin-bottom: 1.2vw;
+  margin-top: 0.1vw;
+  width: 100%;
+  color: #FFA2F3;
   text-align: center;
+  font-family: "mrs-eaves", "Baskerville Old Face", Garamond, "Times New Roman", serif;
 }
 section h3::before {
   content: "";
@@ -79,20 +80,18 @@ video
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  
 }
 
-.openvideo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+iframe {
+  background-color: #25367c;
+  padding-bottom:2vw;
+  padding-top: 2vw;
+  width: 72vw;
+  height: 40vw;
 }
-
-.video-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /*
 =============== 
 img & word
