@@ -82,7 +82,10 @@ video
   align-items: center;
   width: 100%;
   height: 100%;
-  
+}
+
+.swich-video {
+  display: none;
 }
 
 iframe {
@@ -92,6 +95,7 @@ iframe {
   width: 72vw;
   height: 40vw;
 }
+
 /*
 =============== 
 img & word
@@ -244,7 +248,7 @@ Button
   border: none;
   border-radius: 1.5vw;
   padding: 1.5vw 4vw;
-  font-size: 2.5vw;
+  font-size: 2.4vw;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0vw 1vw 2vw rgba(0, 0, 0, 0.1);
@@ -255,3 +259,12 @@ Button
   background-color: #ff9933; 
   transform: translateY(-2px);
 }
+
+/*
+=============== 
+Responsive
+===============
+*/
+
+/* @media screen and (min-width: 426px) {
+} */

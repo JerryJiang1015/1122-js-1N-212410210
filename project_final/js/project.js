@@ -43,9 +43,6 @@ Btn.forEach((btn) => {
         project = await getAlbumSupabase();
       } else {
         project = await getprojectsSupabase_10();
-        if (Name !== 'all') {
-          project = project.filter((product) => product.company_10.name === Name);
-        }
       }
       console.log(`${Name} project`, project);
       displayprojects(project);
@@ -86,6 +83,13 @@ const displayprojects = (projects) => {
     });
   });
 };
+
+const switchVideoBtn = document.querySelector('.switch-video-btn');
+const videoSection = document.querySelector('.video');
+
+switchVideoBtn.addEventListener('click', () => {
+  videoSection.classList.toggle('swich-video');
+});
 
 document.addEventListener('DOMContentLoaded', async () => {
   project_10 = await getprojectsSupabase_10();
