@@ -1,46 +1,41 @@
 import { _supabase } from './clientSupabase_10.js';
 
-let products_10 = [];
+let mens_10 = [];
 
 const getProductsSupabase_10 = async () => {
   try {
-    let { data, error } = await _supabase
-      .from('products_10')
-      .select('*, company_10(*)');
-    console.log('products data', data);
+    let { data, error } = await _supabase.from('store_f2_10');
+    console.log('store_f2_10 data', data);
     return data;
   } catch (error) {
     console.log(error);
   }
 };
 
-const productContainer = document.querySelector('.products-container');
+const items = document.querySelector('.items');
 
-console.log('products_10', products_10);
+console.log('mens_10', mens_10);
 
-const displayProducts = (products) => {
-  let productsContent = products
-    .map((product) => {
-      const { title, price, localImg } = product;
+const displaymens = (mens) => {
+  let mensContent = mens
+    .map((men) => {
+      const { id, name, category_id, price, local_img, remote_img } = men;
       return `
-        <div class="single-product">
-        <img
-          src=${localImg}
-          class="single-product-img img"
-          alt=${title}
-        />
-        <footer>
-          <h3 class="name">${title}</h3>
-          <span class="price">$${price}</span>
-        </footer>
-      </div>
+        <div class="collection-item">
+            <img class="image" src="${remote_img}" />
+            <div class="collection-footer">
+              <span class="name">${name} Vest</span>
+              <span class="price">${price}</span>
+            </div>
+            <button class="custom-button">Add to Cart</button>
+          </div>
     `;
     })
     .join('');
-  productContainer.innerHTML = productsContent;
+  items.innerHTML = mensContent;
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
   products_10 = await getProductsSupabase_10();
-  displayProducts(products_10);
+  displaymens(products_10);
 });
